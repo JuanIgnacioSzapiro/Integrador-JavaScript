@@ -76,24 +76,18 @@ form{
     align-items: center;
 }
 .form-group > input{
-    margin-top: 3vh;
     width: 60vw;
 }
 .form-group > select{
     width: 60vw;
 }
-.mrg_esp{
-    margin-top: 3vh;
-}
-.mrg_esp > input{
-    margin-top: 1vh;
-}
-.mrg_esp > select{
-    margin-top: 1vh;
+.form-group > label{
+    align-self: start;
+    margin-left: 0.9vw;
 }
 #pagar{
     width: 60vw;
-    margin-top: 5vh;
+    margin-top: 2vh;
     padding: 15px;
     background-color: rgb(203, 226, 238);
     color: rgb(84, 130, 204);
@@ -151,8 +145,8 @@ footer > a{
     .form-group{
         width: 31vw;
     }
-    .form-group > label{
-        margin-left: -18vw;
+    #inputAddress{
+        width: 61vw;
     }
     .form-group > input{
         margin-top: 1vh;
@@ -168,12 +162,11 @@ footer > a{
         margin-top: 1vh;
         width: 30vw;
     }
+    #pagar{
+        width: 61vw;
+    }
 }
 @media screen and (min-width:980px) {
-    /*FORMULARIO*/
-    .form-group > label{
-        margin-left: -23vw;
-    }
     /*BARRA DE NAVEGACION*/
     nav{
         position: sticky;
@@ -208,7 +201,4 @@ footer > a{
         padding-right: 7%;
     }
     /*FORMULARIO*/
-    .form-group > label{
-        margin-left: -25vw;
-    }
 }
