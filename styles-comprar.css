@@ -1,0 +1,214 @@
+/*BARRA DE NAVEGACION*/
+nav{
+    background-color: rgb(56, 58, 59);
+}
+nav > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+}
+.confBsAs{
+    font-size: clamp(20px, 1vw, 180%);
+}
+.opciones_nav{
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(15px , 1vw, 100%);
+}
+nav > div > a{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+nav > div > a:hover{
+    color: rgb(240, 248, 210);
+}
+nav > div > a:active{
+    color: rgb(193, 196, 145);
+}
+.gris{
+    color: rgb(163, 162, 162);
+}
+.verde{
+    color: rgb(12, 151, 42);
+}
+/*GENERAL*/
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*DESCUENTOS*/
+#descuentos{
+    margin-top: 160px;
+}
+#descuentos > div{
+    border: solid;
+    margin: 2px;
+    padding-top: clamp(3%, 1vw, 3px);
+    padding-bottom: clamp(1%, 1vw, 3px);
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+}
+div #estudiante{
+    border-color: rgb(138, 138, 251);
+}
+div #trainee{
+    border-color: rgb(91, 184, 91);
+}
+div #junior{
+    border-color: rgb(221, 207, 5);
+}
+.aclaracion{
+    opacity: 0.6;
+}
+/*VENTA*/
+div > h1{
+    font-size: clamp(30px,3vw,3vw);
+}
+/*FORMULARIO*/
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-group > input{
+    margin-top: 3vh;
+    width: 60vw;
+}
+.form-group > select{
+    width: 60vw;
+}
+.mrg_esp{
+    margin-top: 3vh;
+}
+.mrg_esp > input{
+    margin-top: 1vh;
+}
+.mrg_esp > select{
+    margin-top: 1vh;
+}
+#pagar{
+    width: 60vw;
+    margin-top: 5vh;
+    padding: 15px;
+    background-color: rgb(203, 226, 238);
+    color: rgb(84, 130, 204);
+    font-weight: bold;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-top: 3vh;
+    width: 65vw;
+}
+.botones > button{
+    box-shadow:none;
+    background-color: rgb(146, 199, 78);
+    border-radius: 5px;
+    color: white;
+    border-style: none;
+    font-size: clamp(15px , 1.8vw, 120%);
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 30vw;
+}
+/*FOOTER*/
+footer{
+    margin-top: 3%;
+    background: rgb(0,60,84);
+    background: linear-gradient(270deg, rgb(0, 58, 83) 17%, rgba(0,49,69,1) 77%, rgba(0,29,41,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer > a{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 1%;
+    font-size: clamp(15px , 3vw, 150%);
+}
+@media screen and (min-width:580px) {
+    /*DESCUENTOS*/
+    #descuentos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: none;
+    }
+    /*FORMULARIO*/
+    .form-row{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    .form-group{
+        width: 31vw;
+    }
+    .form-group > label{
+        margin-left: -18vw;
+    }
+    .form-group > input{
+        margin-top: 1vh;
+        width: 30vw;
+    }
+    #inputAddress{
+        width: 61vw;
+    }
+    #pagar{
+        width: 61vw;
+    }
+    .form-group > select{
+        margin-top: 1vh;
+        width: 30vw;
+    }
+}
+@media screen and (min-width:980px) {
+    /*FORMULARIO*/
+    .form-group > label{
+        margin-left: -23vw;
+    }
+    /*BARRA DE NAVEGACION*/
+    nav{
+        position: sticky;
+    }
+    nav > div{
+        display:inline-block;
+        min-width: 30vw;
+    }
+    .portada{
+        margin-left: 5%;
+    }
+    .opciones_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 0;
+        margin-right: 4%;
+        min-width: 60%;
+    }
+    /*DESCUENTOS*/
+    #descuentos{
+        margin-top: 5%;
+    }
+}
+@media screen and (min-width:1414px) {
+    /*FOOTER*/
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    /*FORMULARIO*/
+    .form-group > label{
+        margin-left: -25vw;
+    }
+}
