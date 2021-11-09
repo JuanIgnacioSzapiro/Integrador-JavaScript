@@ -5,13 +5,13 @@ document.getElementById("resumen").onclick = function(){
     // alert(categoria);
     if(cantidad>0){
         if(categoria=="Estudiante"){
-            cantidad=cantidad*0.8;
+            cantidad=cantidad*200*0.8;
         }
         else if(categoria=="Trainee"){
-            cantidad=cantidad*0.5;
+            cantidad=cantidad*200*0.5;
         }
         else if(categoria=="Junior"){
-            cantidad=cantidad*0.15;
+            cantidad=cantidad*200*0.15;
         }
         document.getElementById("pagar").innerText = "Total a pagar: $" + cantidad;
     }
